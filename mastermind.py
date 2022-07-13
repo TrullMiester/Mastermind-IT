@@ -93,7 +93,10 @@ def score(secret,guess):
             ccolors[guess[i]] += 1
     return (red, white)
 
-mm = MM(4)
+def runner():
+    mm = MM(4)
+    print(mm.code)
+    play(mm)
 
-print(mm.code)
-play(mm)
+if __name__ == '__main__':
+    runner()
